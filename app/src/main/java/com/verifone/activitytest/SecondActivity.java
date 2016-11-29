@@ -13,10 +13,11 @@ import android.widget.Toast;
  * Created by 李凯 on 2016/11/20.
  */
 
-public class SecondActivity extends Activity{
+public class SecondActivity extends BaseActivity{
     @Override
     protected void onCreate(Bundle saveInstanceState) {
         super.onCreate(saveInstanceState);
+        Log.d("--->SecondActivity", getClass().getSimpleName());
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.layout2);
 
@@ -33,7 +34,9 @@ public class SecondActivity extends Activity{
         layout2_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                Intent intent = new Intent(SecondActivity.this, ThirdActivity.class);
+                startActivity(intent);
+//                finish();
             }
         });
 

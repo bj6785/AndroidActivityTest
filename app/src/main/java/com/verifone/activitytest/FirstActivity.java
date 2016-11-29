@@ -18,10 +18,11 @@ import android.widget.Toast;
  * Created by 李凯 on 2016/11/13.
  */
 
-public class FirstActivity extends Activity{
+public class FirstActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d("--->FirstActivity", getClass().getSimpleName());
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.layout);
 
@@ -29,8 +30,9 @@ public class FirstActivity extends Activity{
         button1.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
+//               Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
+
                String data = "Hello World";
-               //Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
                Intent intent = new Intent("com.verifone.activitytest.ACTION_START");
                intent.addCategory("com.verifone.activitytest.MY_CATEGORY");
                intent.putExtra("SecondActivityData", data);
