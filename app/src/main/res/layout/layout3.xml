@@ -8,10 +8,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Hello World"/>
-    <!--<WebView-->
-        <!--android:id="@+id/wv"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent">-->
-
-    <!--</WebView>-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout3_button"
+        android:text="Back"/>
 </LinearLayout>

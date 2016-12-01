@@ -54,8 +54,7 @@ public class FirstActivity extends BaseActivity {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent("android.intent.action.VIEW");
-                intent.setData(Uri.parse("http://www.baidu.com"));
+                Intent intent = new Intent("com.verifone.activitytest.THIRD_ACTIVITY_START");
                 startActivity(intent);
             }
         });

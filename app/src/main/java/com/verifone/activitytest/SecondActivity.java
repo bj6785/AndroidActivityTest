@@ -36,7 +36,6 @@ public class SecondActivity extends BaseActivity{
             public void onClick(View v) {
                 Intent intent = new Intent(SecondActivity.this, ThirdActivity.class);
                 startActivity(intent);
-//                finish();
             }
         });
 
